@@ -25,8 +25,6 @@ body{
 .contenedor {
     display: flex;
     width: 90vw;
-    /* agregado mio */
-    box-shadow: 5px 5px 20px;
 }
 .panel {
     /* ue la imagen cubra bien 
@@ -44,6 +42,44 @@ body{
     color: #fff;
     /* cambiamos tipo de cursor */
     cursor: pointer;
-     
+    /* hace referencia a flex grow */
+    flex: 0.4;
+    margin: 10px;
+    position: relative;
+    transition: all 700ms ease-in;
+    /* retoques mios */
+    box-shadow: 5px 5px 15px black;
+    border: 2px solid rgb(92, 91, 91);
 }
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+  }
+  .panel.activado {
+    /* el panel que esta activado agarra 
+    mas flex grow con mas prioridad de espacio */
+    flex: 5;
+  }
+  .panel.activado h3 {
+    /* el texto dentro del panel activado ahora se ve */
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+  }
+
+  /* cuando la pantalla es menor, se ajusta el ancho
+  y se esconden los ultimos elementos */
+  @media (max-width: 580px) {
+    .contenedor {
+      width: 100vw;
+    }
   
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+      display: none;
+    }
+  }
