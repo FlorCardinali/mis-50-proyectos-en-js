@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+body{
+    /* tamaño del body, todo el alto
+    de la  pantalla */
+    height: 100vh;
+    font-family: 'Muli', sans-serif;
+    /* centrarlo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*  que si algo se sale del body 
+    qque se oculte */
+    overflow: hidden;
+    /* quitame todos los margenes
+    por defecto */
+    margin: 0;
+    /*  agregados mios */
+    background-color: rgb(51, 54, 56);
+}   
+
+.contenedor {
+    display: flex;
+    width: 90vw;
+    /* agregado mio */
+    box-shadow: 5px 5px 20px;
+}
+.panel {
+    /* ue la imagen cubra bien 
+    y no cortado */
+    background-size: cover;
+    /* centrar el fondo a pesar
+    de que este mas angosta la imagen*/
+    background-position: center;
+    /* que no se repita */
+    background-repeat: no-repeat;
+    height: 80vh;
+    /* poner borde a cada imagen */
+    border-radius: 20px;
+    /* color de la letra */
+    color: #fff;
+    /* cambiamos tipo de cursor */
+    cursor: pointer;
+     
+}
+  
