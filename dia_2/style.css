@@ -1,0 +1,30 @@
+:root {
+    --borde-activo: #3498db;
+    --borde-no-activo: #383838;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* color de fondo */
+    background-color: #1f1f1f;
+    font-family: 'Muli', sans-serif;
+    /* centrar el unico contenedor del body*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* tamaño del body de todo el alto del dispositivo */
+    height: 100vh;
+    /* si se sale algo del body, que se oculte */
+    overflow: hidden;
+    /* quitar los margenes por defecto */
+    margin: 0;
+  }
+
+  .container {
+    text-align: center;
+  }
