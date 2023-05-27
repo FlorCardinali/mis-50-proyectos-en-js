@@ -1,0 +1,84 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+background-image: linear-gradient(180deg, #3b3b3d, black);
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+height: 100vh;
+overflow: hidden;
+margin: 0;
+display: flex;
+flex-flow: column nowrap;
+align-items: center;
+justify-content:center; 
+gap: 80px;
+}
+
+.container {
+position: relative;
+background-color:transparent;
+height: 50px;
+justify-self: center;
+}
+
+.container .input {
+background-color: #fff;
+border-radius: 50px;
+border: 0;
+font-size: 18px;
+padding: 15px;
+height: 50px;
+width: 50px;
+transition: width 0.3s ease;
+}
+
+.btn {
+background-color: #363535;
+color: #fff;
+border-radius: 50%;
+border: 2px solid whitesmoke;
+cursor: pointer;
+font-size: 26px;
+position: absolute;
+top: -5%;
+left: -5%;
+height: 55px;
+width: 55px;
+transition: transform 0.3s ease;
+}
+
+.btn:focus,
+.input:focus {
+outline: none;
+}
+
+.container.active .input {
+width: 300px;
+border-radius: 50px 0 0 50px;
+}
+
+.container.active .btn {
+transform: translateX(288px);
+}
+
+
+.messages.con-algo{
+  height: 300px;
+  width: 500px;
+  overflow-y: scroll;
+  background-color: #1e1e1f;
+  border-radius: 50px;
+  color: #fff;
+  padding: 20px;
+}
+.messages p {
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  background-color: #141414;
+  border-radius: 50px;
+}
+.messages::-webkit-scrollbar{
+  width: 0;
+}
