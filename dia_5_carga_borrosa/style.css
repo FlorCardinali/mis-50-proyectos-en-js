@@ -13,17 +13,16 @@
     background-color: #333;
   }
   .imagen{
-    background-image: url('https://i.blogs.es/ceda9c/dalle/1366_2000.jpg');
+    background-image: url('https://cdn.fansshare.com/image/wallpapers1920x1080/night-view-widescreen-full-hd-wallpaper-full-hd-wallpapers-full-hd-1492263459.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     width: 60vw;
     height:90vh;
-    box-shadow: 0px 0px 80px rgb(229, 196, 196);
+    box-shadow: 0px 0px 150px rgb(119, 143, 228);
     border: 3px solid white;
     filter: blur(100%);
-    transition: filter 0.1s ease;
   }
   .texto_cargando {
     color: aliceblue;
